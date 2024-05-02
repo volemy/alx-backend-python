@@ -1,4 +1,4 @@
-#!/usr/bin env python3
+#!/usr/bin/env python3
 """ This module contains the floor function that takes n as an argument
 """
 
