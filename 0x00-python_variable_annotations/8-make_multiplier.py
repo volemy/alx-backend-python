@@ -10,10 +10,6 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
     """
     This returns a function that multiplies a float by multiplier
     """
-
     def multipler_func(n: float) -> float:
-        """
-        This multiplies a float by multiplier.
-        """
-        return multiplier * n
+        return n * multiplier
     return multiplier_func
