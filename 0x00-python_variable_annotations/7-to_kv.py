@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
-""" This module contains function to_kv that takes a string k and 
-an int or float v as arguments
-"""
+""" This module contains function to_kv that takes a string k and number. """
 
-from typing import Union, Tuple
+from typing import Tuple, Union
 
 
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
