@@ -1,0 +1,1 @@
+For this repository we look at at advanced python concepts and solve tasks.
