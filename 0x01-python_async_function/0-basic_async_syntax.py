@@ -1,23 +1,19 @@
 #!/usr/bin/env python3
 """
-This module contains a a wait_random function
+This module defines an asynchronous coroutine that
+waits for a random amount of time.
 """
 
 import asyncio
 import random
 
 
-async def wait_random(max_delay: float = 10) -> float:
+async def wait_random(max_delay: int = 10) -> float:
     """
-    An asynchronous coroutine that waits for a random delay between 0 and max_delay
-    (included and float value) seconds and eventually returns it.
-
-    Args:
-        max_delay (float, optional): Maximum delay. Defaults to 10.
-
-    Returns:
-        float: The random delay.
+    This function asynchronously waits for a random time
+    between 0 and max_delay seconds.
     """
-    delay = random.uniform(0, max_delay)
+    delay: float = random.uniform(0, max_delay)
     await asyncio.sleep(delay)
     return delay
+
