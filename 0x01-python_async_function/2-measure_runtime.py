@@ -11,7 +11,7 @@ wait_n = __import__('1-concurrent_coroutines').wait_n
 
 def measure_time(n: int, max_delay: int) -> float:
     """
-    This function measures the total execution time of wait_n divided by n to 
+    This function measures the total execution time of wait_n divided by n to
     find the average time
     """
     start_time = time.time()
@@ -19,4 +19,3 @@ def measure_time(n: int, max_delay: int) -> float:
     end_time = time.time()
     total_time = end_time - start_time
     return total_time / n
-
